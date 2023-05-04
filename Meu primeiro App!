@@ -12,9 +12,10 @@ class AulaGrupoDois extends Statels sWidget{
     "Qual é a sua cor favorita?",
     "Qual é o seu animal favorito?",
     "Qual é o seu hobby favorito?"
+    "Qual o seu signo?"
 
 };
-void clicou(){
+void acao(){
 setState (()
 contador: contador++;
 };
