@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
 
 class Perguntas extends StatelessWidget(
-  String texto;
-  
-  Pergutas(this.texto);
+  final String buttonText;
+ 
+  Pergutas(this.buttonText);
   
   @override
   Widget build (BuildContext context){
-    return Container{
-      width: double infinity
-      margin:EdgeInstets.all(20),
-     child Text( 
-     texto,
-     style: TextAlign.center,),//text
-     ); //Container
-    } 
-    
- 
+    return ElevatedButton{
+      onPressed: () {
+        // Adicione aqui a lógica que será executada quando o botão for pressionado.
+      },
+       child: Text(Txto),
+       
+    );
   }
+}
+
+  
+  
+   
