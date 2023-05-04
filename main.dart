@@ -5,39 +5,37 @@ main(){
 }
 
 class AulaGrupoDois extends Statels sWidget{
+
+
+
+
+
  
  var contador=0;
- var perguntas = {
- 
-    "Qual é a sua cor favorita?",
-    "Qual é o seu animal favorito?",
-    "Qual é o seu hobby favorito?"
-    "Qual o seu signo?"
-
-};
-void acao(){
+ void acao(){
 setState (()
 contador: contador++;
 };
   print("Contador");
-};
+}
 
-  Widget build (BuildContext content){
-    return MaterialApp(
-      home:Scaffold(
-        appBar: AppBar(
-          title: Text("Meu primeiro App")
-        ), 
-      body: Column(
-        children: [
-            Text("Aprendendo Flutter"),
-            Text("Aula CEFET Grupo 02"),
-            ElevatedButton(onPressed:clicou,child:Text('Clique aqui'))
-        ],
-      ),
-      ),
-    );
-  }
-  
+@override
+Widget build(BuildContext contex){
+return MaterialApp(  
+home:Scaffold(
+appBar: AppBar(
+title:Text("Jogo da Perguntas"),
+),//AppBar
+
+body:Column(
+children:[
+Perguntas(perguntas[contador]), c}
+ElevatedButton(onPressed: null, c}
+ElevatedButton(onPressed: null, c}
+ElevatedButton(onPressed: null, c}
+],
+),//Column
+),//Scaffold
+);MaterialApp
 
   }
