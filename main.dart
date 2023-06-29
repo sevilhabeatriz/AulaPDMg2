@@ -1,36 +1,55 @@
-import 'package:flutter/material.dart"
+import 'package:flutter/material.dart';
+import './perguntas.dart';
+import 'lib.dart';
 
-main(){
-  runApp(AulaGrupoDois());
+Future<void> main() async => runApp(AulaComponente());
+
+Future<void> runApp(AulaComponente aulaComponente) async {}
+
+class AulaComponente extends StatefulWidget {
+  @override
+  State<AulaComponente> createState() => _AulaComponenteState();
 }
 
-class AulaGrupoDois extends Statels sWidget{
- 
- var contador=0;
- void acao(){
-setState (()
-contador: contador++;
-};
-  print("Contador");
-}
+mixin StatefulWidget {}
 
-@override
-Widget build(BuildContext contex){
-return MaterialApp(  
-home:Scaffold(
-appBar: AppBar(
-title:Text("Jogo da Perguntas"),
-),//AppBar
+class _AulaComponenteState extends State<AulaComponente> {
+  var perguntas = [
+    "Qual sua cor favorita?",
+    "Qual seu estado favorito?",
+    "Qual sua escola favorita?",
+    "Qual seu signo?",
+  ];
 
-body:Column(
-children:[
-Perguntas(perguntas[contador]), c}
-ElevatedButton(onPressed: null, c}
-ElevatedButton(onPressed: null, c}
-ElevatedButton(onPressed: null, c}
-],
-),//Column
-),//Scaffold
-);MaterialApp
+  var contador = 0;
 
+  void acao() {
+    setState(() {
+      contador:
+      contador++;
+    });
+    print(contador);
   }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Jogo das Perguntas!"),
+        ),
+        body: Column(
+          children: [
+            Perguntas(perguntas[contador], acao),
+            ElevatedButton(onPressed: acao, child: Text("Azul")),
+            ElevatedButton(onPressed: null, child: Text("Verde")),
+            ElevatedButton(onPressed: null, child: Text("Vermelho")),
+            ElevatedButton(onPressed: null, child: Text("Amarelo")),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+mixin State {}
