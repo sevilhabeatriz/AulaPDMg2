@@ -21,7 +21,7 @@ abstract class AppRoutes{
     static const String POSTAGENS = 'POSTAGENS';
     static const String AJUDA = 'AJUDA';
     static const String QUESTOESCOMENTADAS = 'QUESTOESCOMENTADAS';
-    // APAGAR
+    // LISTA
     static const String TESTES = 'TESTES';
 
     static final routes = {
@@ -35,7 +35,7 @@ abstract class AppRoutes{
       POSTAGENS: (context)=> PostagensPage(),
       AJUDA: (context)=> AjudaPage(),
       QUESTOESCOMENTADAS: (context)=> QuestoesComentadasPage(),
-      // APAGAR
+      // PRODUTOS
       TESTES: (context)=> TestesPage()
     };
 }
